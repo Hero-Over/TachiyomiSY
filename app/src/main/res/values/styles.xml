@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--========-->
+    <!--Toolbars-->
+    <!--========-->
+
+    <style name="Theme.Tachiyomi.ActionMode.CloseButton" parent="Widget.AppCompat.ActionButton.CloseMode">
+        <item name="android:tint">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="Theme.Tachiyomi.ActionButton.Overflow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">?attr/colorOnSurface</item>
+    </style>
+
+
+    <!--===========-->
+    <!--AlertDialog-->
+    <!--===========-->
+    <style name="ThemeOverlay.Tachiyomi.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:textColorPrimary">?attr/colorOnSurface</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+
+    <!--===========-->
+    <!--BottomSheet-->
+    <!--===========-->
+
+    <style name="ThemeOverlay.Tachiyomi.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.Tachiyomi.BottomSheet.Modal</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Tachiyomi.BottomSheetDialog</item>
+    </style>
+
+    <style name="Widget.Tachiyomi.BottomSheet.Modal" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Tachiyomi.BottomSheet</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Tachiyomi.BottomSheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/dialog_radius</item>
+        <item name="cornerSizeTopLeft">@dimen/dialog_radius</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="Animation.Tachiyomi.BottomSheetDialog" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_sheet_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_sheet_slide_out</item>
+    </style>
+
+
+    <!--===============-->
+    <!--Text Appearance-->
+    <!--===============-->
+    <style name="TextAppearance.Widget.Button" parent="TextAppearance.Material3.TitleSmall" />
+
+    <style name="TextAppearance.Widget.Menu" parent="TextAppearance.AppCompat.Menu">
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+
+    <style name="TextAppearance.Tachiyomi.Preference.Secondary" parent="TextAppearance.Material3.BodySmall" />
+
+    <style name="TextAppearance.Tachiyomi.SectionHeader" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+
+    <!--=======-->
+    <!--Widgets-->
+    <!--=======-->
+
+    <style name="Widget.Tachiyomi.GridView" parent="android:Widget">
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+    </style>
+
+    <style name="Widget.Tachiyomi.GridView.Source">
+        <item name="android:gravity">top|left</item>
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:cacheColorHint">?android:attr/textColorHint</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:horizontalSpacing">0dp</item>
+        <item name="android:verticalSpacing">0dp</item>
+    </style>
+
+
+    <style name="Widget.Tachiyomi.SpinnerItem" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:background">@drawable/list_item_selector</item>
+    </style>
+
+
+    <style name="Widget.Tachiyomi.Chip.Action" parent="Widget.Material3.Chip.Suggestion">
+        <item name="chipBackgroundColor">?attr/chipBackgroundColor</item>
+        <item name="android:textColor">?attr/chipTextColor</item>
+        <item name="rippleColor">?attr/colorControlHighlight</item>
+        <item name="chipStrokeWidth">0dp</item>
+
+        <!-- Smaller text/height -->
+        <item name="chipMinHeight">28dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodySmall</item>
+
+        <!-- Collapse horizontal margin -->
+        <item name="chipMinTouchTargetSize">28dp</item>
+
+        <!-- Custom chip states -->
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+
+    <style name="Widget.Tachiyomi.CircularProgressIndicator.Small" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorSize">16dp</item>
+        <item name="trackThickness">2dp</item>
+    </style>
+
+
+    <!--==============-->
+    <!--Widgets.Button-->
+    <!--==============-->
+    <style name="Widget.Tachiyomi.Button.ActionButton" parent="Widget.Material3.Button.TextButton.Icon">
+        <item name="iconGravity">top</item>
+        <item name="iconTint">@color/button_action_selector</item>
+        <item name="iconPadding">4dp</item>
+        <item name="android:textColor">@color/button_action_selector</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.Tachiyomi.Button.IconButton" parent="Widget.Material3.Button.TextButton.Icon">
+        <item name="iconTint">?attr/colorAccent</item>
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+    <style name="Widget.Tachiyomi.Button.InlineButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="backgroundTint">@null</item>
+        <item name="rippleColor">@null</item>
+    </style>
+
+    <style name="Widget.Tachiyomi.Button.OutlinedButton" parent="Widget.Material3.Button.OutlinedButton" />
+
+
+    <!--=======================-->
+    <!--Widgets.MaterialDivider-->
+    <!--=======================-->
+    <style name="Widget.Tachiyomi.MaterialDivider" parent="Widget.Material3.MaterialDivider">
+        <item name="dividerColor">@color/divider_default</item>
+    </style>
+
+
+    <!--=================-->
+    <!--Widgets.TabLayout-->
+    <!--=================-->
+    <style name="Widget.Tachiyomi.TabLayout" parent="Widget.Material3.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabInlineLabel">true</item>
+        <item name="tabMinWidth">75dp</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabRippleColor">@color/ripple_toolbar_fainter</item>
+    </style>
+
+
+    <!--==============-->
+    <!--Widgets.Switch-->
+    <!--==============-->
+    <style name="Widget.Tachiyomi.Switch" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Tachiyomi.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.Tachiyomi.Switch" parent="">
+        <item name="elevationOverlayEnabled">@bool/elevationOverlayEnabled</item>
+    </style>
+
+    <!--==============-->
+    <!--Widgets.Slider-->
+    <!--==============-->
+    <style name="Widget.Tachiyomi.Slider" parent="Widget.Material3.Slider">
+        <item name="labelBehavior">gone</item>
+        <item name="tickVisible">false</item>
+        <item name="trackColorInactive">@color/slider_inactive_track</item>
+        <item name="trackColorActive">@color/slider_active_track</item>
+    </style>
+
+
+    <!--================-->
+    <!--Navigation Views-->
+    <!--================-->
+    <style name="Widget.Tachiyomi.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemRippleColor">@color/ripple_toolbar_fainter</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="Widget.Tachiyomi.NavigationRailView" parent="Widget.Material3.NavigationRailView">
+        <item name="itemRippleColor">@color/ripple_toolbar_fainter</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+
+    <!--============-->
+    <!--FastScroller-->
+    <!--============-->
+    <style name="FloatingTextView" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--================-->
+    <!--Shape Appearance-->
+    <!--================-->
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Tracker" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Cover" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/card_radius</item>
+    </style>
+
+    <style name="ThemeOverlay.Tachiyomi.Dialog.Fullscreen" parent="ThemeOverlay.Material3">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Tachiyomi.Dialog</item>
+    </style>
+
+    <style name="Animation.Tachiyomi.Dialog" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/fade_in_short</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_short</item>
+    </style>
+
+    <!--===========-->
+    <!--Preferences-->
+    <!--===========-->
+    <style name="PreferenceThemeOverlay.Tachiyomi">
+        <item name="preferenceCategoryTitleTextAppearance">?attr/textAppearanceBodyMedium</item>
+        <item name="switchPreferenceCompatStyle">@style/PreferenceThemeOverlay.Tachiyomi.SwitchPreferenceCompat</item>
+    </style>
+
+    <style name="PreferenceThemeOverlay.Tachiyomi.SwitchPreferenceCompat" parent="Preference.SwitchPreferenceCompat.Material">
+        <item name="android:widgetLayout">@layout/pref_widget_switch_material</item>
+    </style>
+
+</resources>
