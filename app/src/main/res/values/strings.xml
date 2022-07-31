@@ -216,7 +216,7 @@
     <string name="pref_library_update_interval">Automatic updates</string>
     <string name="update_never">Off</string>
     <string name="update_6hour">Every 6 hours</string>
-    <string name="update_12hour">Every 12 hours</string>
+    <string name="update_1hour">Every 1 hour</string>
     <string name="update_24hour">Daily</string>
     <string name="update_48hour">Every 2 days</string>
     <string name="update_72hour">Every 3 days</string>
