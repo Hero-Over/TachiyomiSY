@@ -93,7 +93,6 @@
     <string name="time_between_batches_2_hours">2 hours</string>
     <string name="time_between_batches_3_hours">3 hours</string>
     <string name="time_between_batches_6_hours">6 hours</string>
-    <string name="time_between_batches_12_hours">12 hours</string>
     <string name="time_between_batches_24_hours">24 hours</string>
     <string name="time_between_batches_48_hours">48 hours</string>
     <string name="time_between_batches_summary_1">%1$s will currently never check galleries in your library for updates.</string>
@@ -103,7 +102,7 @@
     <string name="gallery_updater_statistics">Gallery updater statistics</string>
     <string name="gallery_updater_stats_text">The updater last ran %1$s, and checked %2$d out of the %3$d galleries that were ready for checking.</string>
     <string name="gallery_updater_not_ran_yet">The updater has not ran yet.</string>
-    <string name="gallery_updater_stats_time">\nGalleries that were checked in the last:\n- hour: %1$d\n- 6 hours: %2$d\n- 12 hours: %3$d\n- day: %4$d\n- 2 days: %5$d\n- week: %6$d\n- month: %7$d\n- year: %8$d</string>
+    <string name="gallery_updater_stats_time">\nGalleries that were checked in the last:\n- hour: %1$d\n- 6 hours: %2$d\n- day: %3$d\n- 2 days: %4$d\n- week: %5$d\n- month: %6$d\n- year: %7$d</string>
 
     <!-- EH Settings Upload Dialogs -->
     <string name="settings_profile_note">Settings profile note</string>
